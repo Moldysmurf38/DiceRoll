@@ -1,0 +1,52 @@
+body {
+    background: url("../Images/back-image.jpg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+h1 {
+    text-align: center;
+    background: rgb(0, 0, 0, .7);
+    color: red;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.container-fluid {
+    background: rgb(0, 0, 0, .7);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#roll-button {
+    color: red;
+    border: 2px solid red;
+}
+
+#roll-button:hover {
+    color: white;
+    background: red;
+    border: 2px solid white;
+}
+
+h4 {
+    color: red;
+    margin-top: 20px;
+}
+
+h5 {
+    color: red;
+}
+
+.two-table {
+    display: inline;
+}
+
+td {
+    width: 50px;
+    border: 2px solid white;
+    color: white;
+}

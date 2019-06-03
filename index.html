@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" media="screen" href="Assets/CSS/style.css">
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <title>Dice Roll App</title>
+</head>
+
+<body>
+    <header>
+        <h1>Dice Roll Table</h1>
+    </header>
+    <br>
+    <div class="container-fluid">
+        <form id="rollForm">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="two-side">Two-sided:</label>
+                            <select class="form-control" id="2-dice">
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="four-side">Four-sided:</label>
+                            <select class="form-control" id="4-dice">
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="six-side">Six-sided:</label>
+                            <select class="form-control" id="6-dice">
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="eight-side">Eight-sided:</label>
+                            <select class="form-control" id="8-dice">
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="ten-side">Ten-sided:</label>
+                            <select class="form-control" id="10-dice">
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="twelve-side">Twelve-sided:</label>
+                            <select class="form-control" id="12-dice">
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="twenty-side">Twenty-sided:</label>
+                            <select class="form-control" id="20-dice">
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="hundred-side">Hundred-sided:</label>
+                            <select class="form-control" id="100-dice">
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <button type="button" class="btn btn-light" id="roll-button" value="submit">Roll Em!</button>
+        </form>
+        <br>
+        <div id="results-title"></div>
+        <br>
+        <div class="row">
+            <div class="col-md-6">
+                <div id="two-title">
+                    <h5>Two Results:</h5>
+                </div>
+                <div id="two-results">
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>D1:</td>
+                                <td>D2:</td>
+                                <td>D3:</td>
+                                <td>D4:</td>
+                                <td>D5:</td>
+                                <td>D6:</td>
+                                <td>D7:</td>
+                                <td>D8:</td>
+                                <td>D9:</td>
+                                <td>D10:</td>
+                            </tr>
+                        </thead>
+                        <tbody id="0-results">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div id="four-title">
+                    <h5>Four Results:</h5>
+                </div>
+                <div id="four-results">
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>D1:</td>
+                                <td>D2:</td>
+                                <td>D3:</td>
+                                <td>D4:</td>
+                                <td>D5:</td>
+                                <td>D6:</td>
+                                <td>D7:</td>
+                                <td>D8:</td>
+                                <td>D9:</td>
+                                <td>D10:</td>
+                            </tr>
+                        </thead>
+                        <tbody id="1-results">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div id="six-title">
+                    <h5>Six Results:</h5>
+                </div>
+                <div id="six-results">
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>D1:</td>
+                                <td>D2:</td>
+                                <td>D3:</td>
+                                <td>D4:</td>
+                                <td>D5:</td>
+                                <td>D6:</td>
+                                <td>D7:</td>
+                                <td>D8:</td>
+                                <td>D9:</td>
+                                <td>D10:</td>
+                            </tr>
+                        </thead>
+                        <tbody id="2-results">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div id="eight-title">
+                    <h5>Eight Results:</h5>
+                </div>
+                <div id="eight-results">
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>D1:</td>
+                                <td>D2:</td>
+                                <td>D3:</td>
+                                <td>D4:</td>
+                                <td>D5:</td>
+                                <td>D6:</td>
+                                <td>D7:</td>
+                                <td>D8:</td>
+                                <td>D9:</td>
+                                <td>D10:</td>
+                            </tr>
+                        </thead>
+                        <tbody id="3-results">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div id="ten-title">
+                    <h5>Ten Results:</h5>
+                </div>
+                <div id="ten-results">
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>D1:</td>
+                                <td>D2:</td>
+                                <td>D3:</td>
+                                <td>D4:</td>
+                                <td>D5:</td>
+                                <td>D6:</td>
+                                <td>D7:</td>
+                                <td>D8:</td>
+                                <td>D9:</td>
+                                <td>D10:</td>
+                            </tr>
+                        </thead>
+                        <tbody id="4-results">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div id="twelve-title">
+                    <h5>Twelve Results:</h5>
+                </div>
+                <div id="twelve-results">
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>D1:</td>
+                                <td>D2:</td>
+                                <td>D3:</td>
+                                <td>D4:</td>
+                                <td>D5:</td>
+                                <td>D6:</td>
+                                <td>D7:</td>
+                                <td>D8:</td>
+                                <td>D9:</td>
+                                <td>D10:</td>
+                            </tr>
+                        </thead>
+                        <tbody id="5-results">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div id="twenty-title">
+                    <h5>Twenty Results:</h5>
+                </div>
+                <div id="twenty-results">
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>D1:</td>
+                                <td>D2:</td>
+                                <td>D3:</td>
+                                <td>D4:</td>
+                                <td>D5:</td>
+                                <td>D6:</td>
+                                <td>D7:</td>
+                                <td>D8:</td>
+                                <td>D9:</td>
+                                <td>D10:</td>
+                            </tr>
+                        </thead>
+                        <tbody id="6-results">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div id="hundred-title">
+                    <h5>Hundred Results:</h5>
+                </div>
+                <div id="hundred-results">
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>D1:</td>
+                                <td>D2:</td>
+                                <td>D3:</td>
+                                <td>D4:</td>
+                                <td>D5:</td>
+                                <td>D6:</td>
+                                <td>D7:</td>
+                                <td>D8:</td>
+                                <td>D9:</td>
+                                <td>D10:</td>
+                            </tr>
+                        </thead>
+                        <tbody id="7-results">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="Assets/Javascript/game.js"></script>
+</body>
+
+</html>
