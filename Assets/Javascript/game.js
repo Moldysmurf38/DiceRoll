@@ -10,71 +10,66 @@ $("#roll-button").on("click", function () {
     var hundredRoll = $("#100-dice").val();
     rollVal.push(twoRoll, fourRoll, sixRoll, eightRoll, tenRoll, twelveRoll, twentyRoll, hundredRoll);
     for (var x = 0; x < rollVal.length; x++) {
-        $("#" + x + "-row").remove();
-        var diceRow = $("<tr>");
-        diceRow.attr("id", x + "-row");
-        $("#" + x + "-results").append(diceRow);
         if (x === 0) {
             for (var i = 0; i < twoRoll; i++) {
-                var diceToss = diceRoll(1,2)
-                rowBuild(diceToss, x)
+                $("#two-" + i + "-roll").html("");
+                var diceToss = diceRoll(1,2);
+                $("#two-" + i + "-roll").html(diceToss);
             };
-        }
+        };
         if (x === 1) {
             for (var i = 0; i < fourRoll; i++) {
-                var diceToss = diceRoll(1,4)
-                rowBuild(diceToss, x)
+                $("#two-" + i + "-roll").html("");
+                var diceToss = diceRoll(1,4);
+                $("#four-" + i + "-roll").html(diceToss);
             };
-        }
+        };
         if (x === 2) {
             for (var i = 0; i < sixRoll; i++) {
-                var diceToss = diceRoll(1,6)
-                rowBuild(diceToss, x)
+                $("#two-" + i + "-roll").html("");
+                var diceToss = diceRoll(1,6);
+                $("#six-" + i + "-roll").html(diceToss);
             };
-        }
+        };
         if (x === 3) {
             for (var i = 0; i < eightRoll; i++) {
-                var diceToss = diceRoll(1,8)
-                rowBuild(diceToss, x)
+                $("#two-" + i + "-roll").html("");
+                var diceToss = diceRoll(1,8);
+                $("#eight-" + i + "-roll").html(diceToss);
             };
-        }
+        };
         if (x === 4) {
             for (var i = 0; i < tenRoll; i++) {
-                var diceToss = diceRoll(1,10)
-                rowBuild(diceToss, x)
+                $("#two-" + i + "-roll").html("");
+                var diceToss = diceRoll(1,10);
+                $("#ten-" + i + "-roll").html(diceToss);
             };
-        }
+        };
         if (x === 5) {
             for (var i = 0; i < twelveRoll; i++) {
-                var diceToss = diceRoll(1,12)
-                rowBuild(diceToss, x)
+                $("#two-" + i + "-roll").html("");
+                var diceToss = diceRoll(1,12);
+                $("#twelve-" + i + "-roll").html(diceToss);
             };
-        }
+        };
         if (x === 6) {
             for (var i = 0; i < twentyRoll; i++) {
-                var diceToss = diceRoll(1,20)
-                rowBuild(diceToss, x)
+                $("#two-" + i + "-roll").html("");
+                var diceToss = diceRoll(1,20);
+                $("#twenty-" + i + "-roll").html(diceToss);
             };
-        }
+        };
         if (x === 7) {
             for (var i = 0; i < hundredRoll; i++) {
-                var diceToss = diceRoll(1,100)
-                rowBuild(diceToss, x)
+                $("#two-" + i + "-roll").html("");
+                var diceToss = diceRoll(1,100);
+                $("#hundred-" + i + "-roll").html(diceToss);
             };
-        }
+        };
     };
-    
 });
 
 function diceRoll(min, max) {
     var diceThrow = Math.floor(Math.random() * max) + min;
     return diceThrow;
-}
-
-function rowBuild(diceToss, x) {
-    var diceResult = $("<td>");
-    diceResult.attr("class", x + "-value");
-    $("#" + x + "-row").append(diceResult);
-    $("." + x + "-value").html(diceToss);
-    $("td").removeClass(x + "-value")
-}
+};
