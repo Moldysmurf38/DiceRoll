@@ -49,7 +49,7 @@ $("#roll-button").on("click", function () {
                 var y = "two";
                 var diceToss = diceRoll(1, 2);
                 rollDisplay(diceToss, i, y);
-                var cell = $("#two-" + i + "-roll").text()
+                var cell = $("#two-" + i + "-roll").text();
                 twoTotal += parseInt(cell);
             };
             $("#two-sub").html(twoTotal);
@@ -59,7 +59,7 @@ $("#roll-button").on("click", function () {
                 var y = "four";
                 var diceToss = diceRoll(1, 4);
                 rollDisplay(diceToss, i, y);
-                var cell = $("#four-" + i + "-roll").text()
+                var cell = $("#four-" + i + "-roll").text();
                 fourTotal += parseInt(cell);
             };
             $("#four-sub").html(fourTotal);
@@ -69,7 +69,7 @@ $("#roll-button").on("click", function () {
                 var y = "six";
                 var diceToss = diceRoll(1, 6);
                 rollDisplay(diceToss, i, y);
-                var cell = $("#six-" + i + "-roll").text()
+                var cell = $("#six-" + i + "-roll").text();
                 sixTotal += parseInt(cell);
             };
             $("#six-sub").html(sixTotal);
@@ -79,7 +79,7 @@ $("#roll-button").on("click", function () {
                 var y = "eight";
                 var diceToss = diceRoll(1, 8);
                 rollDisplay(diceToss, i, y);
-                var cell = $("#eight-" + i + "-roll").text()
+                var cell = $("#eight-" + i + "-roll").text();
                 eightTotal += parseInt(cell);
             };
             $("#eight-sub").html(eightTotal);
@@ -89,7 +89,7 @@ $("#roll-button").on("click", function () {
                 var y = "ten";
                 var diceToss = diceRoll(1, 10);
                 rollDisplay(diceToss, i, y);
-                var cell = $("#ten-" + i + "-roll").text()
+                var cell = $("#ten-" + i + "-roll").text();
                 tenTotal += parseInt(cell);
             };
             $("#ten-sub").html(tenTotal);
@@ -99,7 +99,7 @@ $("#roll-button").on("click", function () {
                 var y = "twelve";
                 var diceToss = diceRoll(1, 12);
                 rollDisplay(diceToss, i, y);
-                var cell = $("#twelve-" + i + "-roll").text()
+                var cell = $("#twelve-" + i + "-roll").text();
                 twelveTotal += parseInt(cell);
             };
             $("#twelve-sub").html(twelveTotal);
@@ -109,7 +109,7 @@ $("#roll-button").on("click", function () {
                 var y = "twenty";
                 var diceToss = diceRoll(1, 20);
                 rollDisplay(diceToss, i, y);
-                var cell = $("#twenty-" + i + "-roll").text()
+                var cell = $("#twenty-" + i + "-roll").text();
                 twentyTotal += parseInt(cell);
             };
             $("#twenty-sub").html(twentyTotal);
@@ -119,13 +119,15 @@ $("#roll-button").on("click", function () {
                 var y = "hundred";
                 var diceToss = diceRoll(1, 100);
                 rollDisplay(diceToss, i, y);
-                var cell = $("#hundred-" + i + "-roll").text()
+                var cell = $("#hundred-" + i + "-roll").text();
                 hundredTotal += parseInt(cell);
             };
             $("#hundred-sub").html(hundredTotal);
         };
     };
-    //rollTotal(x)
+
+    var totalSum = twoTotal + fourTotal + sixTotal + eightTotal + tenTotal + twelveTotal + twentyTotal + hundredTotal
+    $("#total-results").html(totalSum);
 });
 
 
@@ -137,31 +139,3 @@ function diceRoll(min, max) {
 function rollDisplay(diceToss, i, y) {
     $("#" + y + "-" + i + "-roll").html(diceToss);
 };
-
-
-
-// function rollTotal() {
-//     debugger;
-//     var totalRow = $("<tr>");
-//     totalRow.attr("class", "total-head");
-//     $("#total-head").append(totalRow);
-//     var totalText = $("<td>");
-//     totalText.attr("class", "total-text");
-//     $(".total-head").append(totalText);
-//     $(".total-text").html("Total Ammount:");
-//     var totalSum = $(".0sub-result").val() + $(".1sub-result").val() + $(".2sub-result").val() + 
-//     $(".3sub-result").val() + $(".4sub-result").val() + $(".5sub-result").val() + $(".6sub-result").val() + 
-//     $(".7sub-result").val();
-//     var diceTotal = $("<td>");
-//     diceTotal.attr("class", "total-number");
-//     $("#total-results").append(diceTotal);
-//     $(".total-number").html(totalSum);
-// };
-
-function nanValue(cell) {
-    if (cell == "NaN") {
-        return 0.00;
-    } else {
-        return cell;
-    }
-}
