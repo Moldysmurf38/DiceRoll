@@ -1,4 +1,5 @@
 $("#roll-button").on("click", function () {
+    $(".roll-cell").empty();
     $(".total-head").remove();
     $(".total-number").remove();
     var rollVal = [];
