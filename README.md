@@ -6,7 +6,7 @@ An app that allows players to roll up to 10 of each type of standard dice.
 
 ### **Getting Started:**
 
-Check out the deployed project here: 
+Check out the deployed project here: https://moldysmurf38.github.io/DiceRoll/
 
 ### **How to Use:**
 
