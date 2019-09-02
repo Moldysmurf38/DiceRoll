@@ -1,7 +1,27 @@
+var rollTotal = 0;
+var twoTotal = 0;
+var fourTotal = 0;
+var sixTotal = 0;
+var eightTotal = 0;
+var tenTotal = 0;
+var twelveTotal = 0;
+var twentyTotal = 0;
+var hundredTotal = 0;
+
+$("#total-results").html(rollTotal);
+$("#two-sub").html(twoTotal);
+$("#four-sub").html(fourTotal);
+$("#six-sub").html(sixTotal);
+$("#eight-sub").html(eightTotal);
+$("#ten-sub").html(tenTotal);
+$("#twelve-sub").html(twelveTotal);
+$("#twenty-sub").html(twentyTotal);
+$("#hundred-sub").html(hundredTotal);
+
 $("#roll-button").on("click", function () {
     $(".roll-cell").empty();
-    $(".total-head").remove();
-    $(".total-number").remove();
+    $(".sub-roll").empty();
+    $("#total-results").empty();
     var rollVal = [];
     var twoRoll = $("#2-dice").val();
     var fourRoll = $("#4-dice").val();
@@ -14,119 +34,74 @@ $("#roll-button").on("click", function () {
     rollVal.push(twoRoll, fourRoll, sixRoll, eightRoll, tenRoll, twelveRoll, twentyRoll, hundredRoll);
     //Create an array with text for headers and call header array[x] to write dynamic titles?
     for (var x = 0; x < rollVal.length; x++) {
-        $("." + x + "-sub").remove();
-        $("#" + x + "-row").remove();
-        $("#" + x + "-headrow").remove();
-        var diceHeader = $("<tr>");
-        diceHeader.attr("id", x + "-headrow");
-        $("#" + x + "-head").append(diceHeader);
-        var diceRow = $("<tr>");
-        diceRow.attr("id", x + "-row");
-        $("#" + x + "-results").append(diceRow);
         if (x === 0) {
             for (var i = 0; i < twoRoll; i++) {
-                //tableHead(i, x);
+                var y = "two";
                 var diceToss = diceRoll(1, 2);
-                rowBuild(diceToss, x);
-            };
-            if (twoRoll > 0) {
-                subTotal();
-                subTotal(x);
+                rowBuild(diceToss, i, y);
             };
         };
         if (x === 1) {
             for (var i = 0; i < fourRoll; i++) {
-                //tableHead(i, x);
+                var y = "four";
                 var diceToss = diceRoll(1, 4);
-                rowBuild(diceToss, x);
-            };
-            if (fourRoll > 0) {
-                subTotal(x);
+                rowBuild(diceToss, i, y);
             };
         };
         if (x === 2) {
             for (var i = 0; i < sixRoll; i++) {
-                //tableHead(i, x);
+                var y = "six";
                 var diceToss = diceRoll(1, 6);
-                rowBuild(diceToss, x);
-            };
-            if (sixRoll > 0) {
-                subTotal(x);
+                rowBuild(diceToss, i, y);
             };
         };
         if (x === 3) {
             for (var i = 0; i < eightRoll; i++) {
-                //tableHead(i, x);
+                var y = "eight";
                 var diceToss = diceRoll(1, 8);
-                rowBuild(diceToss, x);
-            };
-            if (eightRoll > 0) {
-                subTotal(x);
+                rowBuild(diceToss, i, y);
             };
         };
         if (x === 4) {
             for (var i = 0; i < tenRoll; i++) {
-                //tableHead(i, x);
+                var y = "ten";
                 var diceToss = diceRoll(1, 10);
-                rowBuild(diceToss, x);
-            };
-            if (tenRoll > 0) {
-                subTotal(x);
+                rowBuild(diceToss, i, y);
             };
         };
         if (x === 5) {
             for (var i = 0; i < twelveRoll; i++) {
-                //tableHead(i, x);
+                var y = "twelve";
                 var diceToss = diceRoll(1, 12);
-                rowBuild(diceToss, x);
-            };
-            if (twelveRoll > 0) {
-                subTotal(x);
+                rowBuild(diceToss, i, y);
             };
         };
         if (x === 6) {
             for (var i = 0; i < twentyRoll; i++) {
-                //tableHead(i, x);
+                var y = "twenty";
                 var diceToss = diceRoll(1, 20);
-                rowBuild(diceToss, x);
-            };
-            if (twentyRoll > 0) {
-                subTotal(x);
+                rowBuild(diceToss, i, y);
             };
         };
         if (x === 7) {
             for (var i = 0; i < hundredRoll; i++) {
-                //tableHead(i, x);
+                var y = "hundred";
                 var diceToss = diceRoll(1, 100);
-                rowBuild(diceToss, x);
-            };
-            if (hundredRoll > 0) {
-                subTotal(x);
+                rowBuild(diceToss, i, y);
             };
         };
     };
     rollTotal(x)
 });
 
-// function tableHead(i, x) {
-//     var diceHead = $("<td>");
-//     diceHead.attr("class", x + "-dice");
-//     $("#" + x + "-headrow").append(diceHead);
-//     $("." + x + "-dice").html("D" + (i+1) + ":");
-//     $("td").removeClass(x + "-dice");
-// };
 
 function diceRoll(min, max) {
     var diceThrow = Math.floor(Math.random() * max) + min;
     return diceThrow;
 };
 
-function rowBuild(diceToss, x) {
-    var diceResult = $("<td>");
-    diceResult.attr("class", x + "-value");
-    $("#" + x + "-row").append(diceResult);
-    $("." + x + "-value").html(diceToss);
-    $("td").removeClass(x + "-value");
+function rowBuild(diceToss, i, y) {
+    $("#"+ y + "-" + i + "-roll").html(diceToss);
 };
 
 function subTotal(x) {
