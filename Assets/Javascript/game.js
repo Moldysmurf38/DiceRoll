@@ -18,6 +18,7 @@ $("#twelve-sub").html(twelveTotal);
 $("#twenty-sub").html(twentyTotal);
 $("#hundred-sub").html(hundredTotal);
 
+
 $("#roll-button").on("click", function () {
     $(".roll-cell").empty();
     $(".sub-roll").empty();
@@ -48,118 +49,80 @@ $("#roll-button").on("click", function () {
                 var y = "two";
                 var diceToss = diceRoll(1, 2);
                 rollDisplay(diceToss, i, y);
-            };
-            for (var z = 0; z < twoRoll; z++) {
-                var cell = $("#two-" + z + "-roll").text()
+                var cell = $("#two-" + i + "-roll").text()
                 twoTotal += parseInt(cell);
-            }
+            };
             $("#two-sub").html(twoTotal);
-            console.log(twoTotal)
         };
         if (x === 1) {
             for (var i = 0; i < fourRoll; i++) {
                 var y = "four";
                 var diceToss = diceRoll(1, 4);
                 rollDisplay(diceToss, i, y);
+                var cell = $("#four-" + i + "-roll").text()
+                fourTotal += parseInt(cell);
             };
-            $("#four-row").each(function () {
-                $(this).find('td').each(function () {
-                    var cell = $(this).html();
-                    // nanValue(cell)
-                    fourTotal += parseInt(cell);
-                });
-                $("#four-sub").html(fourTotal);
-            });
+            $("#four-sub").html(fourTotal);
         };
         if (x === 2) {
             for (var i = 0; i < sixRoll; i++) {
                 var y = "six";
                 var diceToss = diceRoll(1, 6);
                 rollDisplay(diceToss, i, y);
+                var cell = $("#six-" + i + "-roll").text()
+                sixTotal += parseInt(cell);
             };
-            $("#six-row").each(function () {
-                $(this).find('td').each(function () {
-                    var cell = $(this).html();
-                    // nanValue(cell)
-                    sixTotal += parseInt(cell);
-                });
-                $("#six-sub").html(sixTotal);
-            });
+            $("#six-sub").html(sixTotal);
         };
         if (x === 3) {
             for (var i = 0; i < eightRoll; i++) {
                 var y = "eight";
                 var diceToss = diceRoll(1, 8);
                 rollDisplay(diceToss, i, y);
+                var cell = $("#eight-" + i + "-roll").text()
+                eightTotal += parseInt(cell);
             };
-            $("#eight-row").each(function () {
-                $(this).find('td').each(function () {
-                    var cell = $(this).html();
-                    // nanValue(cell)
-                    eightTotal += parseInt(cell);
-                });
-                $("#eight-sub").html(eightTotal);
-            });
+            $("#eight-sub").html(eightTotal);
         };
         if (x === 4) {
             for (var i = 0; i < tenRoll; i++) {
                 var y = "ten";
                 var diceToss = diceRoll(1, 10);
                 rollDisplay(diceToss, i, y);
+                var cell = $("#ten-" + i + "-roll").text()
+                tenTotal += parseInt(cell);
             };
-            $("#ten-row").each(function () {
-                $(this).find('td').each(function () {
-                    var cell = $(this).html();
-                    // nanValue(cell)
-                    tenTotal += parseInt(cell);
-                });
-                $("#ten-sub").html(tenTotal);
-            });
+            $("#ten-sub").html(tenTotal);
         };
         if (x === 5) {
             for (var i = 0; i < twelveRoll; i++) {
                 var y = "twelve";
                 var diceToss = diceRoll(1, 12);
                 rollDisplay(diceToss, i, y);
+                var cell = $("#twelve-" + i + "-roll").text()
+                twelveTotal += parseInt(cell);
             };
-            $("#twelve-row").each(function () {
-                $(this).find('td').each(function () {
-                    var cell = $(this).html();
-                    // nanValue(cell)
-                    twelveTotal += parseInt(cell);
-                });
-                $("#twelve-sub").html(twelveTotal);
-            });
+            $("#twelve-sub").html(twelveTotal);
         };
         if (x === 6) {
             for (var i = 0; i < twentyRoll; i++) {
                 var y = "twenty";
                 var diceToss = diceRoll(1, 20);
                 rollDisplay(diceToss, i, y);
+                var cell = $("#twenty-" + i + "-roll").text()
+                twentyTotal += parseInt(cell);
             };
-            $("#twenty-row").each(function () {
-                $(this).find('td').each(function () {
-                    var cell = $(this).html();
-                    // nanValue(cell)
-                    twentyTotal += parseInt(cell);
-                });
-                $("#twenty-sub").html(twentyTotal);
-            });
+            $("#twenty-sub").html(twentyTotal);
         };
         if (x === 7) {
             for (var i = 0; i < hundredRoll; i++) {
                 var y = "hundred";
                 var diceToss = diceRoll(1, 100);
                 rollDisplay(diceToss, i, y);
+                var cell = $("#hundred-" + i + "-roll").text()
+                hundredTotal += parseInt(cell);
             };
-            $("#hundred-row").each(function () {
-                $(this).find('td').each(function () {
-                    var cell = $(this).html();
-                    // nanValue(cell)
-                    hundredTotal += parseInt(cell);
-                });
-                $("#hundred-sub").html(hundredTotal);
-            });
+            $("#hundred-sub").html(hundredTotal);
         };
     };
     //rollTotal(x)

@@ -8,14 +8,14 @@ body {
 
 h1 {
     text-align: center;
-    background: rgb(0, 0, 0, .7);
+    background: rgb(0, 0, 0, .9);
     color: red;
     padding: 10px;
     border-radius: 5px;
 }
 
 .container-fluid {
-    background: rgb(0, 0, 0, .7);
+    background: rgb(0, 0, 0, .9);
     color: white;
     padding: 10px;
     border-radius: 5px;
@@ -50,3 +50,7 @@ td {
     border: 2px solid white;
     color: white;
 }
+
+td:empty:after{
+    content: "\00a0";
+  }
