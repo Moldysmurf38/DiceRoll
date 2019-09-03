@@ -53,6 +53,10 @@ td {
     color: white;
 }
 
-/* td:empty:after{
+td:empty:after{
     content: "\00a0";
-  } */
+  }
+
+.bg-custom {
+    background-color: red;
+}
