@@ -49,10 +49,10 @@ h5 {
 
 td {
     width: 50px;
-    border: 2px solid white;
+    border: 1px solid white;
     color: white;
 }
 
-td:empty:after{
+/* td:empty:after{
     content: "\00a0";
-  }
+  } */

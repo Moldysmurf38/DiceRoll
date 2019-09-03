@@ -28,7 +28,8 @@ UI Customizations <br/>
 ### **Built With:**
 
 JQuery: https://jquery.com/ <br/>
-Bootstrap:https://getbootstrap.com/
+Bootstrap:https://getbootstrap.com/ <br>
+Background Images: https://unsplash.com/@pawel_czerwinski
 
 ### **Author(s):**
 
