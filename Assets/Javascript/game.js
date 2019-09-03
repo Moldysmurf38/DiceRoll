@@ -146,12 +146,12 @@ $("#blue-template").on("click", function() {
     $("header").removeClass("neon-header");
     $(".roll-button").removeClass("neon-button");
     $("body").css({"background": "url(./Assets/Images/deep_void.jpg)"});
-    $(".bg-custom").css({"background-color": "rgb(0, 0, 255)"});
+    $(".bg-custom").css({"background-color": "rgb(30,144,255)"});
     $(".bg-custom").css({"background-image": "none"});
-    $("h1").css({"color": "rgb(0, 0, 255)"});
-    $(".roll-button").css({"color": "rgb(0, 0, 255)"});
-    $(".roll-button").css({"border":"2px solid rgb(0, 0, 255)"});
-    $("h5").css({"color": "rgb(0, 0, 255)"});
+    $("h1").css({"color": "	rgb(30,144,255)"});
+    $(".roll-button").css({"color": "rgb(30,144,255)"});
+    $(".roll-button").css({"border":"2px solid rgb(30,144,255)"});
+    $("h5").css({"color": "rgb(30,144,255)"});
 });
 
 $("#green-template").on("click", function() {
