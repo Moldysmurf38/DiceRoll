@@ -1,8 +1,26 @@
 Cookies.set("colorTemplate", "basic", {expires: 2});
 
-var cookieTest = Cookies.get("colorTemplate");
+var cookieTemplate = Cookies.get("colorTemplate");
 
-console.log(cookieTest);
+if (cookieTemplate === "blue") {
+    console.log("the template is blue");
+};
+if (cookieTemplate === "green") {
+    console.log("the template is green");
+};
+if (cookieTemplate === "brown") {
+    console.log("the template is brown");
+};
+if (cookieTemplate === "orange") {
+    console.log("the template is orange");
+};
+if (cookieTemplate === "basic") {
+    console.log("the template is red");
+};
+if (cookieTemplate === "neon") {
+    console.log("the template is neon");
+};
+
 
 var rollTotal = 0;
 var twoTotal = 0;
@@ -143,6 +161,7 @@ function rollDisplay(diceToss, i, y) {
 };
 
 $("#blue-template").on("click", function() {
+    Cookies.set("colorTemplate", "blue", {expires: 2});
     $("h1").removeClass("neon-text");
     $("h5").removeClass("neon-text");
     $("header").removeClass("neon-header");
@@ -157,6 +176,7 @@ $("#blue-template").on("click", function() {
 });
 
 $("#green-template").on("click", function() {
+    Cookies.set("colorTemplate", "green", {expires: 2});
     $("h1").removeClass("neon-text");
     $("h5").removeClass("neon-text");
     $("header").removeClass("neon-header");
@@ -171,6 +191,7 @@ $("#green-template").on("click", function() {
 });
 
 $("#brown-template").on("click", function() {
+    Cookies.set("colorTemplate", "brown", {expires: 2});
     $("h1").removeClass("neon-text");
     $("h5").removeClass("neon-text");
     $("header").removeClass("neon-header");
@@ -185,6 +206,7 @@ $("#brown-template").on("click", function() {
 });
 
 $("#orange-template").on("click", function() {
+    Cookies.set("colorTemplate", "orange", {expires: 2});
     $("h1").removeClass("neon-text");
     $("h5").removeClass("neon-text");
     $("header").removeClass("neon-header");
@@ -199,6 +221,7 @@ $("#orange-template").on("click", function() {
 });
 
 $("#red-template").on("click", function() {
+    Cookies.set("colorTemplate", "basic", {expires: 2});
     $("h1").removeClass("neon-text");
     $("h5").removeClass("neon-text");
     $("header").removeClass("neon-header");
@@ -213,6 +236,7 @@ $("#red-template").on("click", function() {
 });
 
 $("#neon-template").on("click", function() {
+    Cookies.set("colorTemplate", "neon", {expires: 2});
     $("body").css({"background": "url(./Assets/Images/neon_wall.jpg)"});
     $(".bg-custom").css({"background-image": "linear-gradient(to right, rgb(0,255,255), rgb(128,0,128)"});
     $("h1").addClass("neon-text");
