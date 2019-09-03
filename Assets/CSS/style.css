@@ -212,5 +212,7 @@ td:empty:after{
 }
 
 .neon-button:hover {
+    background-color: none;
+    background: -webkit-linear-gradient(rgb(128,0,128),rgb(0,255,255));
     border: 2px solid rgb(148,0,211);
 }
