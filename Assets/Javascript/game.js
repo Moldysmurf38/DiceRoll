@@ -139,3 +139,38 @@ function diceRoll(min, max) {
 function rollDisplay(diceToss, i, y) {
     $("#" + y + "-" + i + "-roll").html(diceToss);
 };
+
+$("#blue-template").on("click", function() {
+    $("body").css({"background": "url(./Assets/Images/deep_void.jpg)"});
+    $(".bg-custom").css({"background-color": "rgb(0, 0, 255)"});
+    $(".bg-custom").css({"background-image": "none"});
+});
+
+$("#green-template").on("click", function() {
+    $("body").css({"background": "url(./Assets/Images/emerald_sea.jpg)"});
+    $(".bg-custom").css({"background-color": "rgb(0,250,154)"});
+    $(".bg-custom").css({"background-image": "none"});
+});
+
+$("#brown-template").on("click", function() {
+    $("body").css({"background": "url(./Assets/Images/crystal_lake.jpg)"});
+    $(".bg-custom").css({"background-color": "rgb(139, 69, 19)"});
+    $(".bg-custom").css({"background-image": "none"});
+});
+
+$("#orange-template").on("click", function() {
+    $("body").css({"background": "url(./Assets/Images/morning_dew.jpg)"});
+    $(".bg-custom").css({"background-color": "rgb(204,85,0)"});
+    $(".bg-custom").css({"background-image": "none"});
+});
+
+$("#red-template").on("click", function() {
+    $("body").css({"background": "url(./Assets/Images/crimson_tide.jpg)"});
+    $(".bg-custom").css({"background-color": "rgb(255, 0, 0)"});
+    $(".bg-custom").css({"background-image": "none"});
+});
+
+$("#neon-template").on("click", function() {
+    $("body").css({"background": "url(./Assets/Images/neon_wall.jpg)"});
+    $(".bg-custom").css({"background-image": "linear-gradient(to right, rgb(0,255,255), rgb(128,0,128)"});
+});
