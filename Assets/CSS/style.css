@@ -8,7 +8,7 @@ body {
     margin-right: 10%;
 }
 
-.dropdown-item:hover {
+:hover {
     color: white;
     background-color: red;
     background-image: none;
