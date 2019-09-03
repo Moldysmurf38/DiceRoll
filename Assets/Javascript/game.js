@@ -18,12 +18,10 @@ $("#twelve-sub").html(twelveTotal);
 $("#twenty-sub").html(twentyTotal);
 $("#hundred-sub").html(hundredTotal);
 
-
 $(".roll-button").on("click", function () {
     $(".roll-cell").empty();
     $(".sub-roll").empty();
     $("#total-results").empty();
-    //var rollTotal = 0;
     var twoTotal = 0;
     var fourTotal = 0;
     var sixTotal = 0;
@@ -42,7 +40,6 @@ $(".roll-button").on("click", function () {
     var twentyRoll = $("#20-dice").val();
     var hundredRoll = $("#100-dice").val();
     rollVal.push(twoRoll, fourRoll, sixRoll, eightRoll, tenRoll, twelveRoll, twentyRoll, hundredRoll);
-    //Create an array with text for headers and call header array[x] to write dynamic titles?
     for (var x = 0; x < rollVal.length; x++) {
         if (x === 0) {
             for (var i = 0; i < twoRoll; i++) {
@@ -125,7 +122,6 @@ $(".roll-button").on("click", function () {
             $("#hundred-sub").html(hundredTotal);
         };
     };
-
     var totalSum = twoTotal + fourTotal + sixTotal + eightTotal + tenTotal + twelveTotal + twentyTotal + hundredTotal
     $("#total-results").html(totalSum);
 });
@@ -148,7 +144,7 @@ $("#blue-template").on("click", function() {
     $("body").css({"background": "url(./Assets/Images/deep_void.jpg)"});
     $(".bg-custom").css({"background-color": "rgb(30,144,255)"});
     $(".bg-custom").css({"background-image": "none"});
-    $("h1").css({"color": "	rgb(30,144,255)"});
+    $("h1").css({"color": "rgb(30,144,255)"});
     $(".roll-button").css({"color": "rgb(30,144,255)"});
     $(".roll-button").css({"border":"2px solid rgb(30,144,255)"});
     $("h5").css({"color": "rgb(30,144,255)"});

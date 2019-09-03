@@ -2,7 +2,7 @@
 
 ### **Project Description:**
 
-An app that allows players to roll up to 10 of each type of standard dice.
+An app that allows players to roll up to 10 of each type of standard dice. It also allows users to pick the color template and background from a pre-set list.
 
 ### **Getting Started:**
 
@@ -23,7 +23,7 @@ If you wish to use the app locally, then clone the repo onto your computer. Whil
 ### **Future Features:**
 
 Mobile Friendly <br/>
-UI Customizations <br/>
+Futher UI Customizations <br/>
 
 ### **Built With:**
 
