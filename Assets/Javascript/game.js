@@ -18,7 +18,7 @@ if (cookieTemplate === "blue") {
     $("body").addClass("body-blue");
     $("h1").addClass("blue-text");
     $("h5").addClass("blue-text");
-    $("button").addClass("btn roll-button blue-button");
+    $("#button-div").addClass("btn roll-button blue-button");
 };
 if (cookieTemplate === "green") {
     $("nav").removeClass();
@@ -31,7 +31,7 @@ if (cookieTemplate === "green") {
     $("body").addClass("body-green");
     $("h1").addClass("green-text");
     $("h5").addClass("green-text");
-    $("button").addClass("btn roll-button green-button");
+    $("#button-div").addClass("btn roll-button green-button");
 };
 if (cookieTemplate === "brown") {
     $("nav").removeClass();
@@ -44,7 +44,7 @@ if (cookieTemplate === "brown") {
     $("body").addClass("body-brown");
     $("h1").addClass("brown-text");
     $("h5").addClass("brown-text");
-    $("button").addClass("btn roll-button brown-button");
+    $("#button-div").addClass("btn roll-button brown-button");
 };
 if (cookieTemplate === "orange") {
     $("nav").removeClass();
@@ -57,7 +57,7 @@ if (cookieTemplate === "orange") {
     $("body").addClass("body-orange");
     $("h1").addClass("orange-text");
     $("h5").addClass("orange-text");
-    $("button").addClass("btn roll-button orange-button");
+    $("#button-div").addClass("btn roll-button orange-button");
 };
 if (cookieTemplate === "basic") {
     $("nav").removeClass();
@@ -80,8 +80,9 @@ if (cookieTemplate === "neon") {
     $("body").addClass("body-neon");
     $("h1").addClass("neon-text");
     $("h5").addClass("neon-text");
-    $("button").addClass("btn roll-button neon-button");
+    $("#button-div").addClass("btn roll-button neon-button");
     $("header").addClass("neon-header")
+    $("#button-div").css({"border": "1px solid rgb(255,255,255)"})
 };
 
 

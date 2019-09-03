@@ -18,13 +18,13 @@ h1 {
 
 .container-fluid {
     background: rgb(0, 0, 0, .8);
-    color: white;
+    color: rgb(255,255,255);
     padding: 10px;
     border-radius: 5px;
 }
 
 .roll-button {
-    background: white;
+    background: rgb(255,255,255);
     color: rgb(255, 0, 0);
     border: 2px solid rgb(255, 0, 0);
 }
@@ -50,8 +50,8 @@ h5 {
 
 td {
     width: 50px;
-    border: 1px solid white;
-    color: white;
+    border: 1px solid rgb(255,255,255);
+    color: rgb(255,255,255);
 }
 
 td:empty:after{
