@@ -29,11 +29,11 @@ h1 {
     border: 2px solid rgb(255, 0, 0);
 }
 
-/* .roll-button:hover {
-    color: white;
-    background: red;
-    border: 2px solid white;
-} */
+.roll-button:hover {
+    color: rgb(255,255,255);
+    background: rgb(255, 0, 0);
+    border: 2px solid rgb(255,255,255);
+}
 
 h4 {
     color: rgb(255, 0, 0);
@@ -85,6 +85,12 @@ td:empty:after{
     border: 2px solid rgb(30,144,255);
 }
 
+.blue-button:hover {
+    color: rgb(255,255,255);
+    background: rgb(30,144,255);
+    border: 2px solid rgb(255,255,255);
+}
+
 .body-green {
     background: url("../Images/emerald_sea.jpg") center;
     background-repeat: no-repeat;
@@ -107,6 +113,12 @@ td:empty:after{
 .green-button {
     color: rgb(0,250,154);
     border: 2px solid rgb(0,250,154);
+}
+
+.green-button:hover {
+    color: rgb(255,255,255);
+    background: rgb(0,250,154);
+    border: 2px solid rgb(255,255,255);
 }
 
 .body-brown {
@@ -133,6 +145,12 @@ td:empty:after{
     border: 2px solid rgb(139, 69, 19);
 }
 
+.brown-button:hover {
+    color: rgb(255,255,255);
+    background: rgb(139, 69, 19);
+    border: 2px solid rgb(255,255,255);
+}
+
 .body-orange {
     background: url("../Images/morning_dew.jpg") center;
     background-repeat: no-repeat;
@@ -155,6 +173,12 @@ td:empty:after{
 .orange-button {
     color: rgb(204,85,0);
     border: 2px solid rgb(204,85,0);
+}
+
+.orange-button:hover {
+    color: rgb(255,255,255);
+    background: rgb(204,85,0);
+    border: 2px solid rgb(255,255,255);
 }
 
 .body-neon {
@@ -185,4 +209,8 @@ td:empty:after{
     background: -webkit-linear-gradient(rgb(0,255,255),rgb(128,0,128));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+.neon-button:hover {
+    border: 2px solid rgb(148,0,211);
 }

@@ -20,6 +20,8 @@ None
 
 If you wish to use the app locally, then clone the repo onto your computer. While in the base directory of the app folder, open the index.html file into your browser.
 
+Note: Due to usage of a cookie, this app will not work in browsers that do not store cookies while using from a local file (i.e. Google Chrome).
+
 ### **Future Features:**
 
 Mobile Friendly <br/>
