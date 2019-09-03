@@ -144,6 +144,10 @@ $("#blue-template").on("click", function() {
     $("body").css({"background": "url(./Assets/Images/deep_void.jpg)"});
     $(".bg-custom").css({"background-color": "rgb(0, 0, 255)"});
     $(".bg-custom").css({"background-image": "none"});
+    $("h1").css({"color": "rgb(0, 0, 255)"});
+    $("#roll-button").css({"color": "rgb(0, 0, 255)"});
+    $("#roll-button").css({"border":"2px solid rgb(0, 0, 255)"})
+    $("h5").css({"color": "rgb(0, 0, 255)"})
 });
 
 $("#green-template").on("click", function() {
