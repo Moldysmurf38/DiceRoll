@@ -1,4 +1,10 @@
-Cookies.set("colorTemplate", "basic", {expires: 2});
+var defaultCookie = Cookies.get("colorTemplate");
+
+console.log(defaultCookie);
+
+if (defaultCookie === NaN || undefined || null) {
+    Cookies.set("colorTemplate", "basic", {expires: 2});
+};
 
 var cookieTemplate = Cookies.get("colorTemplate");
 
