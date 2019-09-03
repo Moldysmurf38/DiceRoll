@@ -1,3 +1,8 @@
+Cookies.set("colorTemplate", "basic", {expires: 2});
+
+var cookieTest = Cookies.get("colorTemplate");
+
+console.log(cookieTest);
 
 var rollTotal = 0;
 var twoTotal = 0;
