@@ -8,22 +8,27 @@ body {
     margin-right: 10%;
 }
 
+.neon-header {
+    background: rgb(0, 0, 0, .7)
+}
+
 h1 {
     text-align: center;
-    background: rgb(0, 0, 0, .9);
+    background: rgb(0, 0, 0, .8);
     color: red;
     padding: 10px;
     border-radius: 5px;
 }
 
 .container-fluid {
-    background: rgb(0, 0, 0, .9);
+    background: rgb(0, 0, 0, .8);
     color: white;
     padding: 10px;
     border-radius: 5px;
 }
 
-#roll-button {
+.roll-button {
+    background: white;
     color: red;
     border: 2px solid red;
 }
@@ -59,4 +64,16 @@ td:empty:after{
 
 .bg-custom {
     background-color: red;
+}
+
+.neon-text {
+    background: -webkit-linear-gradient(rgb(0,255,255),rgb(128,0,128));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent
+}
+
+.neon-button {
+    background: -webkit-linear-gradient(rgb(0,255,255),rgb(128,0,128));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }

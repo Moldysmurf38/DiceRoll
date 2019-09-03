@@ -19,7 +19,7 @@ $("#twenty-sub").html(twentyTotal);
 $("#hundred-sub").html(hundredTotal);
 
 
-$("#roll-button").on("click", function () {
+$(".roll-button").on("click", function () {
     $(".roll-cell").empty();
     $(".sub-roll").empty();
     $("#total-results").empty();
@@ -141,60 +141,81 @@ function rollDisplay(diceToss, i, y) {
 };
 
 $("#blue-template").on("click", function() {
+    $("h1").removeClass("neon-text");
+    $("h5").removeClass("neon-text");
+    $("header").removeClass("neon-header");
+    $(".roll-button").removeClass("neon-button");
     $("body").css({"background": "url(./Assets/Images/deep_void.jpg)"});
     $(".bg-custom").css({"background-color": "rgb(0, 0, 255)"});
     $(".bg-custom").css({"background-image": "none"});
     $("h1").css({"color": "rgb(0, 0, 255)"});
-    $("#roll-button").css({"color": "rgb(0, 0, 255)"});
-    $("#roll-button").css({"border":"2px solid rgb(0, 0, 255)"});
+    $(".roll-button").css({"color": "rgb(0, 0, 255)"});
+    $(".roll-button").css({"border":"2px solid rgb(0, 0, 255)"});
     $("h5").css({"color": "rgb(0, 0, 255)"});
 });
 
 $("#green-template").on("click", function() {
+    $("h1").removeClass("neon-text");
+    $("h5").removeClass("neon-text");
+    $("header").removeClass("neon-header");
+    $(".roll-button").removeClass("neon-button");
     $("body").css({"background": "url(./Assets/Images/emerald_sea.jpg)"});
     $(".bg-custom").css({"background-color": "rgb(0,250,154)"});
     $(".bg-custom").css({"background-image": "none"});
     $("h1").css({"color": "rgb(0,250,154)"});
-    $("#roll-button").css({"color": "rgb(0,250,154)"});
-    $("#roll-button").css({"border":"2px solid rgb(0,250,154)"});
+    $(".roll-button").css({"color": "rgb(0,250,154)"});
+    $(".roll-button").css({"border":"2px solid rgb(0,250,154)"});
     $("h5").css({"color": "rgb(0,250,154)"});
 });
 
 $("#brown-template").on("click", function() {
+    $("h1").removeClass("neon-text");
+    $("h5").removeClass("neon-text");
+    $("header").removeClass("neon-header");
+    $(".roll-button").removeClass("neon-button");
     $("body").css({"background": "url(./Assets/Images/crystal_lake.jpg)"});
     $(".bg-custom").css({"background-color": "rgb(139, 69, 19)"});
     $(".bg-custom").css({"background-image": "none"});
     $("h1").css({"color": "rgb(139, 69, 19)"});
-    $("#roll-button").css({"color": "rgb(139, 69, 19)"});
-    $("#roll-button").css({"border":"2px solid rgb(139, 69, 19)"});
+    $(".roll-button").css({"color": "rgb(139, 69, 19)"});
+    $(".roll-button").css({"border":"2px solid rgb(139, 69, 19)"});
     $("h5").css({"color": "rgb(139, 69, 19)"});
 });
 
 $("#orange-template").on("click", function() {
+    $("h1").removeClass("neon-text");
+    $("h5").removeClass("neon-text");
+    $("header").removeClass("neon-header");
+    $(".roll-button").removeClass("neon-button");
     $("body").css({"background": "url(./Assets/Images/morning_dew.jpg)"});
     $(".bg-custom").css({"background-color": "rgb(204,85,0)"});
     $(".bg-custom").css({"background-image": "none"});
     $("h1").css({"color": "rgb(204,85,0)"});
-    $("#roll-button").css({"color": "rgb(204,85,0)"});
-    $("#roll-button").css({"border":"2px solid rgb(204,85,0)"});
+    $(".roll-button").css({"color": "rgb(204,85,0)"});
+    $(".roll-button").css({"border":"2px solid rgb(204,85,0)"});
     $("h5").css({"color": "rgb(204,85,0)"});
 });
 
 $("#red-template").on("click", function() {
+    $("h1").removeClass("neon-text");
+    $("h5").removeClass("neon-text");
+    $("header").removeClass("neon-header");
+    $(".roll-button").removeClass("neon-button");
     $("body").css({"background": "url(./Assets/Images/crimson_tide.jpg)"});
     $(".bg-custom").css({"background-color": "rgb(255, 0, 0)"});
     $(".bg-custom").css({"background-image": "none"});
     $("h1").css({"color": "rgb(255, 0, 0)"});
-    $("#roll-button").css({"color": "rgb(255, 0, 0)"});
-    $("#roll-button").css({"border":"2px solid rgb(255, 0, 0)"});
+    $(".roll-button").css({"color": "rgb(255, 0, 0)"});
+    $(".roll-button").css({"border":"2px solid rgb(255, 0, 0)"});
     $("h5").css({"color": "rgb(255, 0, 0)"});
 });
 
 $("#neon-template").on("click", function() {
     $("body").css({"background": "url(./Assets/Images/neon_wall.jpg)"});
     $(".bg-custom").css({"background-image": "linear-gradient(to right, rgb(0,255,255), rgb(128,0,128)"});
-    $("h1").css({"color": "linear-gradient(to right, rgb(0,255,255), rgb(128,0,128)"});
-    $("#roll-button").css({"color": "linear-gradient(to right, rgb(0,255,255), rgb(128,0,128)"});
-    $("#roll-button").css({"border":"2px solid linear-gradient(to right, rgb(0,255,255), rgb(128,0,128)"});
-    $("h5").css({"color": "linear-gradient(to right, rgb(0,255,255), rgb(128,0,128)"});
+    $("h1").addClass("neon-text");
+    $("h5").addClass("neon-text");
+    $(".roll-button").addClass("neon-button");
+    $(".roll-button").css({"border":"1px solid white"})
+    $("header").addClass("neon-header");
 });
