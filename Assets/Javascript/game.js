@@ -13,6 +13,7 @@ if (cookieTemplate === "blue") {
     $("h1").removeClass();
     $("h5").removeClass();
     $("#button-div").removeClass();
+    $("header").removeClass();
     $("nav").addClass("navbar navbar-expand-lg navbar-light bg-blue");
     $("body").addClass("body-blue");
     $("h1").addClass("blue-text");
@@ -25,6 +26,7 @@ if (cookieTemplate === "green") {
     $("h1").removeClass();
     $("h5").removeClass();
     $("#button-div").removeClass();
+    $("header").removeClass();
     $("nav").addClass("navbar navbar-expand-lg navbar-light bg-green");
     $("body").addClass("body-green");
     $("h1").addClass("green-text");
@@ -37,6 +39,7 @@ if (cookieTemplate === "brown") {
     $("h1").removeClass();
     $("h5").removeClass();
     $("#button-div").removeClass();
+    $("header").removeClass();
     $("nav").addClass("navbar navbar-expand-lg navbar-light bg-brown");
     $("body").addClass("body-brown");
     $("h1").addClass("brown-text");
@@ -49,6 +52,7 @@ if (cookieTemplate === "orange") {
     $("h1").removeClass();
     $("h5").removeClass();
     $("#button-div").removeClass();
+    $("header").removeClass();
     $("nav").addClass("navbar navbar-expand-lg navbar-light bg-orange");
     $("body").addClass("body-orange");
     $("h1").addClass("orange-text");
@@ -60,6 +64,7 @@ if (cookieTemplate === "basic") {
     $("body").removeClass();
     $("h1").removeClass();
     $("h5").removeClass();
+    $("header").removeClass();
     $("#button-div").removeClass();
     $("nav").addClass("navbar navbar-expand-lg navbar-light bg-custom");
     $("#button-div").addClass("btn roll-button");
@@ -69,12 +74,14 @@ if (cookieTemplate === "neon") {
     $("body").removeClass();
     $("h1").removeClass();
     $("h5").removeClass();
+    $("header").removeClass();
     $("#button-div").removeClass();
     $("nav").addClass("navbar navbar-expand-lg navbar-light bg-neon");
-    $("body").addClass("neon-blue");
+    $("body").addClass("body-neon");
     $("h1").addClass("neon-text");
     $("h5").addClass("neon-text");
     $("button").addClass("btn roll-button neon-button");
+    $("header").addClass("neon-header")
 };
 
 
