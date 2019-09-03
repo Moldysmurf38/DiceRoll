@@ -169,7 +169,7 @@ function rollDisplay(diceToss, i, y) {
 
 $("#blue-template").on("click", function() {
     Cookies.set("colorTemplate", "blue", {expires: 2});
-    document.reload();
+    location.reload();
     // $("h1").removeClass("neon-text");
     // $("h5").removeClass("neon-text");
     // $("header").removeClass("neon-header");
