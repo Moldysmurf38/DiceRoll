@@ -8,11 +8,12 @@ body {
     margin-right: 10%;
 }
 
-:hover {
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
     color: white;
     background-color: red;
     background-image: none;
 }
+
 
 h1 {
     text-align: center;

@@ -14,9 +14,9 @@ if (cookieTemplate === "blue") {
     $("h5").removeClass();
     $("#button-div").removeClass();
     $("header").removeClass();
-    $(".dropdown-item").removeClass("a-blue a-green a-brown a-orange a-neon");
+    $(".dropdown-menu").removeClass("a-blue a-green a-brown a-orange a-neon");
     $("nav").addClass("navbar navbar-expand-lg navbar-light bg-blue");
-    $(".dropdown-item").addClass("a-blue");
+    $(".dropdown-menu").addClass("a-blue");
     $("body").addClass("body-blue");
     $("h1").addClass("blue-text");
     $("h5").addClass("blue-text");
@@ -29,9 +29,9 @@ if (cookieTemplate === "green") {
     $("h5").removeClass();
     $("#button-div").removeClass();
     $("header").removeClass();
-    $(".dropdown-item").removeClass("a-blue a-green a-brown a-orange a-neon");
+    $(".dropdown-menu").removeClass("a-blue a-green a-brown a-orange a-neon");
     $("nav").addClass("navbar navbar-expand-lg navbar-light bg-green");
-    $(".dropdown-item").addClass("a-green");
+    $(".dropdown-menu").addClass("a-green");
     $("body").addClass("body-green");
     $("h1").addClass("green-text");
     $("h5").addClass("green-text");
@@ -44,9 +44,9 @@ if (cookieTemplate === "brown") {
     $("h5").removeClass();
     $("#button-div").removeClass();
     $("header").removeClass();
-    $(".dropdown-item").removeClass("a-blue a-green a-brown a-orange a-neon");
+    $(".dropdown-menu").removeClass("a-blue a-green a-brown a-orange a-neon");
     $("nav").addClass("navbar navbar-expand-lg navbar-light bg-brown");
-    $(".dropdown-item").addClass("a-brown");
+    $(".dropdown-menu").addClass("a-brown");
     $("body").addClass("body-brown");
     $("h1").addClass("brown-text");
     $("h5").addClass("brown-text");
@@ -59,9 +59,9 @@ if (cookieTemplate === "orange") {
     $("h5").removeClass();
     $("#button-div").removeClass();
     $("header").removeClass();
-    $(".dropdown-item").removeClass("a-blue a-green a-brown a-orange a-neon");
+    $(".dropdown-menu").removeClass("a-blue a-green a-brown a-orange a-neon");
     $("nav").addClass("navbar navbar-expand-lg navbar-light bg-orange");
-    $(".dropdown-item").addClass("a-orange");
+    $(".dropdown-menu").addClass("a-orange");
     $("body").addClass("body-orange");
     $("h1").addClass("orange-text");
     $("h5").addClass("orange-text");
@@ -74,7 +74,7 @@ if (cookieTemplate === "basic") {
     $("h5").removeClass();
     $("#button-div").removeClass();
     $("header").removeClass();
-    $(".dropdown-item").removeClass("a-blue a-green a-brown a-orange a-neon");
+    $(".dropdown-menu").removeClass("a-blue a-green a-brown a-orange a-neon");
     $("nav").addClass("navbar navbar-expand-lg navbar-light bg-custom");
     $("#button-div").addClass("btn roll-button");
 };
@@ -85,9 +85,9 @@ if (cookieTemplate === "neon") {
     $("h5").removeClass();
     $("#button-div").removeClass();
     $("header").removeClass();
-    $(".dropdown-item").removeClass("a-blue a-green a-brown a-orange a-neon");
+    $(".dropdown-menu").removeClass("a-blue a-green a-brown a-orange a-neon");
     $("nav").addClass("navbar navbar-expand-lg navbar-light bg-neon");
-    $(".dropdown-item").addClass("a-neon");
+    $(".dropdown-menu").addClass("a-neon");
     $("body").addClass("body-neon");
     $("h1").addClass("neon-text");
     $("h5").addClass("neon-text");
