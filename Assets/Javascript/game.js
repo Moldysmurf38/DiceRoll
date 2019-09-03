@@ -2,11 +2,14 @@ var defaultCookie = Cookies.get("colorTemplate");
 
 if (defaultCookie === undefined) {
     Cookies.set("colorTemplate", "basic", {expires: 2});
+    location.reload();
 };
 
 var cookieTemplate = Cookies.get("colorTemplate");
 
 if (cookieTemplate === "blue") {
+    $("body").addClass("body-blue");
+    $("nav").addClass("bg-blue");
     $("body").addClass("body-blue");
     $("h1").addClass("blue-text");
     $("h5").addClass("blue-text");
