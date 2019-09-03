@@ -1,15 +1,16 @@
 var defaultCookie = Cookies.get("colorTemplate");
 
-console.log(defaultCookie);
-
-if (defaultCookie === NaN || undefined || null) {
+if (defaultCookie === undefined) {
     Cookies.set("colorTemplate", "basic", {expires: 2});
 };
 
 var cookieTemplate = Cookies.get("colorTemplate");
 
 if (cookieTemplate === "blue") {
-    console.log("the template is blue");
+    $("body").addClass("body-blue");
+    $("h1").addClass("blue-text");
+    $("h5").addClass("blue-text");
+    $("button").addClass("blue-button");
 };
 if (cookieTemplate === "green") {
     console.log("the template is green");
@@ -168,17 +169,18 @@ function rollDisplay(diceToss, i, y) {
 
 $("#blue-template").on("click", function() {
     Cookies.set("colorTemplate", "blue", {expires: 2});
-    $("h1").removeClass("neon-text");
-    $("h5").removeClass("neon-text");
-    $("header").removeClass("neon-header");
-    $(".roll-button").removeClass("neon-button");    
-    $("body").css({"background": "url(./Assets/Images/deep_void.jpg)"});
-    $(".bg-custom").css({"background-color": "rgb(30,144,255)"});
-    $(".bg-custom").css({"background-image": "none"});
-    $("h1").css({"color": "rgb(30,144,255)"});
-    $(".roll-button").css({"color": "rgb(30,144,255)"});
-    $(".roll-button").css({"border":"2px solid rgb(30,144,255)"});
-    $("h5").css({"color": "rgb(30,144,255)"});
+    document.reload();
+    // $("h1").removeClass("neon-text");
+    // $("h5").removeClass("neon-text");
+    // $("header").removeClass("neon-header");
+    // $(".roll-button").removeClass("neon-button");    
+    // $("body").css({"background": "url(./Assets/Images/deep_void.jpg)"});
+    // $(".bg-custom").css({"background-color": "rgb(30,144,255)"});
+    // $(".bg-custom").css({"background-image": "none"});
+    // $("h1").css({"color": "rgb(30,144,255)"});
+    // $(".roll-button").css({"color": "rgb(30,144,255)"});
+    // $(".roll-button").css({"border":"2px solid rgb(30,144,255)"});
+    // $("h5").css({"color": "rgb(30,144,255)"});
 });
 
 $("#green-template").on("click", function() {

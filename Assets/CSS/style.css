@@ -8,10 +8,6 @@ body {
     margin-right: 10%;
 }
 
-.neon-header {
-    background: rgb(0, 0, 0, .7)
-}
-
 h1 {
     text-align: center;
     background: rgb(0, 0, 0, .8);
@@ -150,6 +146,10 @@ td:empty:after{
     background-size: cover;
     margin-left: 10%;
     margin-right: 10%;
+}
+
+.neon-header {
+    background: rgb(0, 0, 0, .7)
 }
 
 .neon-text {
