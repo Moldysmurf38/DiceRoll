@@ -8,27 +8,53 @@ if (defaultCookie === undefined) {
 var cookieTemplate = Cookies.get("colorTemplate");
 
 if (cookieTemplate === "blue") {
-    $("body").addClass("body-blue");
-    $("nav").addClass("bg-blue");
-    $("body").addClass("body-blue");
+    $("nav").removeClass();
+    $("body").removeClass();
+    $("h1").removeClass();
+    $("h5").removeClass();
+    $("#button-div").removeClass();
+    $("nav").addClass("navbar navbar-expand-lg navbar-light bg-blue");
+    $("body").addClass("btn roll-button body-blue");
     $("h1").addClass("blue-text");
     $("h5").addClass("blue-text");
     $("button").addClass("blue-button");
 };
 if (cookieTemplate === "green") {
-    console.log("the template is green");
+    $("nav").removeClass();
+    $("body").removeClass();
+    $("h1").removeClass();
+    $("h5").removeClass();
+    $("#button-div").removeClass();
 };
 if (cookieTemplate === "brown") {
-    console.log("the template is brown");
+    $("nav").removeClass();
+    $("body").removeClass();
+    $("h1").removeClass();
+    $("h5").removeClass();
+    $("#button-div").removeClass();
 };
 if (cookieTemplate === "orange") {
-    console.log("the template is orange");
+    $("nav").removeClass();
+    $("body").removeClass();
+    $("h1").removeClass();
+    $("h5").removeClass();
+    $("#button-div").removeClass();
 };
 if (cookieTemplate === "basic") {
-    console.log("the template is red");
+    $("nav").removeClass();
+    $("body").removeClass();
+    $("h1").removeClass();
+    $("h5").removeClass();
+    $("#button-div").removeClass();
+    $("nav").addClass("navbar navbar-expand-lg navbar-light bg-custom");
+    $("#button-div").addClass("btn roll-button")
 };
 if (cookieTemplate === "neon") {
-    console.log("the template is neon");
+    $("nav").removeClass();
+    $("body").removeClass();
+    $("h1").removeClass();
+    $("h5").removeClass();
+    $("#button-div").removeClass();
 };
 
 
@@ -173,17 +199,6 @@ function rollDisplay(diceToss, i, y) {
 $("#blue-template").on("click", function() {
     Cookies.set("colorTemplate", "blue", {expires: 2});
     location.reload();
-    // $("h1").removeClass("neon-text");
-    // $("h5").removeClass("neon-text");
-    // $("header").removeClass("neon-header");
-    // $(".roll-button").removeClass("neon-button");    
-    // $("body").css({"background": "url(./Assets/Images/deep_void.jpg)"});
-    // $(".bg-custom").css({"background-color": "rgb(30,144,255)"});
-    // $(".bg-custom").css({"background-image": "none"});
-    // $("h1").css({"color": "rgb(30,144,255)"});
-    // $(".roll-button").css({"color": "rgb(30,144,255)"});
-    // $(".roll-button").css({"border":"2px solid rgb(30,144,255)"});
-    // $("h5").css({"color": "rgb(30,144,255)"});
 });
 
 $("#green-template").on("click", function() {
@@ -233,17 +248,7 @@ $("#orange-template").on("click", function() {
 
 $("#red-template").on("click", function() {
     Cookies.set("colorTemplate", "basic", {expires: 2});
-    $("h1").removeClass("neon-text");
-    $("h5").removeClass("neon-text");
-    $("header").removeClass("neon-header");
-    $(".roll-button").removeClass("neon-button");
-    $("body").css({"background": "url(./Assets/Images/crimson_tide.jpg)"});
-    $(".bg-custom").css({"background-color": "rgb(255, 0, 0)"});
-    $(".bg-custom").css({"background-image": "none"});
-    $("h1").css({"color": "rgb(255, 0, 0)"});
-    $(".roll-button").css({"color": "rgb(255, 0, 0)"});
-    $(".roll-button").css({"border":"2px solid rgb(255, 0, 0)"});
-    $("h5").css({"color": "rgb(255, 0, 0)"});
+    location.reload();
 });
 
 $("#neon-template").on("click", function() {
