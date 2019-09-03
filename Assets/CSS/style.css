@@ -15,7 +15,7 @@ body {
 h1 {
     text-align: center;
     background: rgb(0, 0, 0, .8);
-    color: red;
+    color: rgb(255, 0, 0);
     padding: 10px;
     border-radius: 5px;
 }
@@ -29,8 +29,8 @@ h1 {
 
 .roll-button {
     background: white;
-    color: red;
-    border: 2px solid red;
+    color: rgb(255, 0, 0);
+    border: 2px solid rgb(255, 0, 0);
 }
 
 /* .roll-button:hover {
@@ -40,12 +40,12 @@ h1 {
 } */
 
 h4 {
-    color: red;
+    color: rgb(255, 0, 0);
     margin-top: 20px;
 }
 
 h5 {
-    color: red;
+    color: rgb(255, 0, 0);
 }
 
 .two-table {
@@ -63,7 +63,93 @@ td:empty:after{
   }
 
 .bg-custom {
-    background-color: red;
+    background-color: rgb(255, 0, 0);
+}
+
+#body-blue {
+    background: url("../Images/deep_void.jpg") center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.blue-text {
+    color: rgb(30,144,255);
+}
+
+.blue-button {
+    color: rgb(30,144,255);
+    border: 2px solid rgb(30,144,255);
+}
+
+#body-green {
+    background: url("../Images/emerald_sea.jpg") center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.green-text {
+    color: rgb(0,250,154);
+}
+
+.green-button {
+    color: rgb(0,250,154);
+    border: 2px solid rgb(0,250,154);
+}
+
+#body-brown {
+    background: url("../Images/crystal_lake.jpg") center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.brown-text {
+    color: rgb(139, 69, 19);
+}
+
+.brown-button {
+    color: rgb(139, 69, 19);
+    border: 2px solid rgb(139, 69, 19);
+}
+
+#body-orange {
+    background: url("../Images/morning_dew.jpg") center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.orange-text {
+    color: rgb(204,85,0);
+}
+
+.orange-button {
+    color: rgb(204,85,0);
+    border: 2px solid rgb(204,85,0);
+}
+
+#body-neon {
+    background: url("../Images/neon_wall.jpg") center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 .neon-text {

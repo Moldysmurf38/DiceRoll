@@ -1,3 +1,4 @@
+
 var rollTotal = 0;
 var twoTotal = 0;
 var fourTotal = 0;
@@ -140,7 +141,7 @@ $("#blue-template").on("click", function() {
     $("h1").removeClass("neon-text");
     $("h5").removeClass("neon-text");
     $("header").removeClass("neon-header");
-    $(".roll-button").removeClass("neon-button");
+    $(".roll-button").removeClass("neon-button");    
     $("body").css({"background": "url(./Assets/Images/deep_void.jpg)"});
     $(".bg-custom").css({"background-color": "rgb(30,144,255)"});
     $(".bg-custom").css({"background-image": "none"});
