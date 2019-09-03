@@ -14,7 +14,9 @@ if (cookieTemplate === "blue") {
     $("h5").removeClass();
     $("#button-div").removeClass();
     $("header").removeClass();
+    $("a").removeClass();
     $("nav").addClass("navbar navbar-expand-lg navbar-light bg-blue");
+    $("a").addClass("dropdown-item a-blue");
     $("body").addClass("body-blue");
     $("h1").addClass("blue-text");
     $("h5").addClass("blue-text");
@@ -27,7 +29,9 @@ if (cookieTemplate === "green") {
     $("h5").removeClass();
     $("#button-div").removeClass();
     $("header").removeClass();
+    $("a").removeClass();
     $("nav").addClass("navbar navbar-expand-lg navbar-light bg-green");
+    $("a").addClass("dropdown-item a-green");
     $("body").addClass("body-green");
     $("h1").addClass("green-text");
     $("h5").addClass("green-text");
@@ -40,7 +44,9 @@ if (cookieTemplate === "brown") {
     $("h5").removeClass();
     $("#button-div").removeClass();
     $("header").removeClass();
+    $("a").removeClass();
     $("nav").addClass("navbar navbar-expand-lg navbar-light bg-brown");
+    $("a").addClass("dropdown-item a-brown");
     $("body").addClass("body-brown");
     $("h1").addClass("brown-text");
     $("h5").addClass("brown-text");
@@ -53,7 +59,9 @@ if (cookieTemplate === "orange") {
     $("h5").removeClass();
     $("#button-div").removeClass();
     $("header").removeClass();
+    $("a").removeClass();
     $("nav").addClass("navbar navbar-expand-lg navbar-light bg-orange");
+    $("a").addClass("dropdown-item a-orange");
     $("body").addClass("body-orange");
     $("h1").addClass("orange-text");
     $("h5").addClass("orange-text");
@@ -64,9 +72,11 @@ if (cookieTemplate === "basic") {
     $("body").removeClass();
     $("h1").removeClass();
     $("h5").removeClass();
-    $("header").removeClass();
     $("#button-div").removeClass();
+    $("header").removeClass();
+    $("a").removeClass();
     $("nav").addClass("navbar navbar-expand-lg navbar-light bg-custom");
+    $("a").addClass("dropdown-item");
     $("#button-div").addClass("btn roll-button");
 };
 if (cookieTemplate === "neon") {
@@ -74,9 +84,11 @@ if (cookieTemplate === "neon") {
     $("body").removeClass();
     $("h1").removeClass();
     $("h5").removeClass();
-    $("header").removeClass();
     $("#button-div").removeClass();
+    $("header").removeClass();
+    $("a").removeClass();
     $("nav").addClass("navbar navbar-expand-lg navbar-light bg-neon");
+    $("a").addClass("dropdown-item a-neon");
     $("body").addClass("body-neon");
     $("h1").addClass("neon-text");
     $("h5").addClass("neon-text");
