@@ -14,10 +14,10 @@ if (cookieTemplate === "blue") {
     $("h5").removeClass();
     $("#button-div").removeClass();
     $("nav").addClass("navbar navbar-expand-lg navbar-light bg-blue");
-    $("body").addClass("btn roll-button body-blue");
+    $("body").addClass("body-blue");
     $("h1").addClass("blue-text");
     $("h5").addClass("blue-text");
-    $("button").addClass("blue-button");
+    $("button").addClass("btn roll-button blue-button");
 };
 if (cookieTemplate === "green") {
     $("nav").removeClass();
@@ -25,6 +25,11 @@ if (cookieTemplate === "green") {
     $("h1").removeClass();
     $("h5").removeClass();
     $("#button-div").removeClass();
+    $("nav").addClass("navbar navbar-expand-lg navbar-light bg-green");
+    $("body").addClass("body-green");
+    $("h1").addClass("green-text");
+    $("h5").addClass("green-text");
+    $("button").addClass("btn roll-button green-button");
 };
 if (cookieTemplate === "brown") {
     $("nav").removeClass();
@@ -32,6 +37,11 @@ if (cookieTemplate === "brown") {
     $("h1").removeClass();
     $("h5").removeClass();
     $("#button-div").removeClass();
+    $("nav").addClass("navbar navbar-expand-lg navbar-light bg-brown");
+    $("body").addClass("body-brown");
+    $("h1").addClass("brown-text");
+    $("h5").addClass("brown-text");
+    $("button").addClass("btn roll-button brown-button");
 };
 if (cookieTemplate === "orange") {
     $("nav").removeClass();
@@ -39,6 +49,11 @@ if (cookieTemplate === "orange") {
     $("h1").removeClass();
     $("h5").removeClass();
     $("#button-div").removeClass();
+    $("nav").addClass("navbar navbar-expand-lg navbar-light bg-orange");
+    $("body").addClass("body-orange");
+    $("h1").addClass("orange-text");
+    $("h5").addClass("orange-text");
+    $("button").addClass("btn roll-button orange-button");
 };
 if (cookieTemplate === "basic") {
     $("nav").removeClass();
@@ -47,7 +62,7 @@ if (cookieTemplate === "basic") {
     $("h5").removeClass();
     $("#button-div").removeClass();
     $("nav").addClass("navbar navbar-expand-lg navbar-light bg-custom");
-    $("#button-div").addClass("btn roll-button")
+    $("#button-div").addClass("btn roll-button");
 };
 if (cookieTemplate === "neon") {
     $("nav").removeClass();
@@ -55,6 +70,11 @@ if (cookieTemplate === "neon") {
     $("h1").removeClass();
     $("h5").removeClass();
     $("#button-div").removeClass();
+    $("nav").addClass("navbar navbar-expand-lg navbar-light bg-neon");
+    $("body").addClass("neon-blue");
+    $("h1").addClass("neon-text");
+    $("h5").addClass("neon-text");
+    $("button").addClass("btn roll-button neon-button");
 };
 
 
@@ -203,47 +223,17 @@ $("#blue-template").on("click", function() {
 
 $("#green-template").on("click", function() {
     Cookies.set("colorTemplate", "green", {expires: 2});
-    $("h1").removeClass("neon-text");
-    $("h5").removeClass("neon-text");
-    $("header").removeClass("neon-header");
-    $(".roll-button").removeClass("neon-button");
-    $("body").css({"background": "url(./Assets/Images/emerald_sea.jpg)"});
-    $(".bg-custom").css({"background-color": "rgb(0,250,154)"});
-    $(".bg-custom").css({"background-image": "none"});
-    $("h1").css({"color": "rgb(0,250,154)"});
-    $(".roll-button").css({"color": "rgb(0,250,154)"});
-    $(".roll-button").css({"border":"2px solid rgb(0,250,154)"});
-    $("h5").css({"color": "rgb(0,250,154)"});
+    location.reload();
 });
 
 $("#brown-template").on("click", function() {
     Cookies.set("colorTemplate", "brown", {expires: 2});
-    $("h1").removeClass("neon-text");
-    $("h5").removeClass("neon-text");
-    $("header").removeClass("neon-header");
-    $(".roll-button").removeClass("neon-button");
-    $("body").css({"background": "url(./Assets/Images/crystal_lake.jpg)"});
-    $(".bg-custom").css({"background-color": "rgb(139, 69, 19)"});
-    $(".bg-custom").css({"background-image": "none"});
-    $("h1").css({"color": "rgb(139, 69, 19)"});
-    $(".roll-button").css({"color": "rgb(139, 69, 19)"});
-    $(".roll-button").css({"border":"2px solid rgb(139, 69, 19)"});
-    $("h5").css({"color": "rgb(139, 69, 19)"});
+    location.reload();
 });
 
 $("#orange-template").on("click", function() {
     Cookies.set("colorTemplate", "orange", {expires: 2});
-    $("h1").removeClass("neon-text");
-    $("h5").removeClass("neon-text");
-    $("header").removeClass("neon-header");
-    $(".roll-button").removeClass("neon-button");
-    $("body").css({"background": "url(./Assets/Images/morning_dew.jpg)"});
-    $(".bg-custom").css({"background-color": "rgb(204,85,0)"});
-    $(".bg-custom").css({"background-image": "none"});
-    $("h1").css({"color": "rgb(204,85,0)"});
-    $(".roll-button").css({"color": "rgb(204,85,0)"});
-    $(".roll-button").css({"border":"2px solid rgb(204,85,0)"});
-    $("h5").css({"color": "rgb(204,85,0)"});
+    location.reload();
 });
 
 $("#red-template").on("click", function() {
@@ -253,11 +243,5 @@ $("#red-template").on("click", function() {
 
 $("#neon-template").on("click", function() {
     Cookies.set("colorTemplate", "neon", {expires: 2});
-    $("body").css({"background": "url(./Assets/Images/neon_wall.jpg)"});
-    $(".bg-custom").css({"background-image": "linear-gradient(to right, rgb(0,255,255), rgb(128,0,128)"});
-    $("h1").addClass("neon-text");
-    $("h5").addClass("neon-text");
-    $(".roll-button").addClass("neon-button");
-    $(".roll-button").css({"border":"1px solid white"})
-    $("header").addClass("neon-header");
+    location.reload();
 });
