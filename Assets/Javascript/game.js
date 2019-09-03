@@ -14,7 +14,7 @@ if (cookieTemplate === "blue") {
     $("h5").removeClass();
     $("#button-div").removeClass();
     $("header").removeClass();
-    $("a").removeClass();
+    $("#template-link").removeClass();
     $("nav").addClass("navbar navbar-expand-lg navbar-light bg-blue");
     $("#template-link").addClass("dropdown-item a-blue");
     $("body").addClass("body-blue");
@@ -29,7 +29,7 @@ if (cookieTemplate === "green") {
     $("h5").removeClass();
     $("#button-div").removeClass();
     $("header").removeClass();
-    $("a").removeClass();
+    $("#template-link").removeClass();
     $("nav").addClass("navbar navbar-expand-lg navbar-light bg-green");
     $("#template-link").addClass("dropdown-item a-green");
     $("body").addClass("body-green");
@@ -44,7 +44,7 @@ if (cookieTemplate === "brown") {
     $("h5").removeClass();
     $("#button-div").removeClass();
     $("header").removeClass();
-    $("a").removeClass();
+    $("#template-link").removeClass();
     $("nav").addClass("navbar navbar-expand-lg navbar-light bg-brown");
     $("#template-link").addClass("dropdown-item a-brown");
     $("body").addClass("body-brown");
@@ -59,7 +59,7 @@ if (cookieTemplate === "orange") {
     $("h5").removeClass();
     $("#button-div").removeClass();
     $("header").removeClass();
-    $("a").removeClass();
+    $("#template-link").removeClass();
     $("nav").addClass("navbar navbar-expand-lg navbar-light bg-orange");
     $("#template-link").addClass("dropdown-item a-orange");
     $("body").addClass("body-orange");
@@ -74,7 +74,7 @@ if (cookieTemplate === "basic") {
     $("h5").removeClass();
     $("#button-div").removeClass();
     $("header").removeClass();
-    $("a").removeClass();
+    $("#template-link").removeClass();
     $("nav").addClass("navbar navbar-expand-lg navbar-light bg-custom");
     $("#template-link").addClass("dropdown-item");
     $("#button-div").addClass("btn roll-button");
@@ -86,7 +86,7 @@ if (cookieTemplate === "neon") {
     $("h5").removeClass();
     $("#button-div").removeClass();
     $("header").removeClass();
-    $("a").removeClass();
+    $("#template-link").removeClass();
     $("nav").addClass("navbar navbar-expand-lg navbar-light bg-neon");
     $("#template-link").addClass("dropdown-item a-neon");
     $("body").addClass("body-neon");
