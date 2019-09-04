@@ -14,6 +14,7 @@ if (cookieTemplate === "blue") {
     $("h5").removeClass();
     $("#button-div").removeClass();
     $("header").removeClass();
+    $(".dropdown-item").addClass("blue-hover")
     $("nav").addClass("navbar navbar-expand-lg navbar-light bg-blue");
     $("body").addClass("body-blue");
     $("h1").addClass("blue-text");
@@ -27,6 +28,7 @@ if (cookieTemplate === "green") {
     $("h5").removeClass();
     $("#button-div").removeClass();
     $("header").removeClass();
+    $(".dropdown-item").addClass("green-hover")
     $("nav").addClass("navbar navbar-expand-lg navbar-light bg-green");
     $("body").addClass("body-green");
     $("h1").addClass("green-text");
@@ -40,6 +42,7 @@ if (cookieTemplate === "brown") {
     $("h5").removeClass();
     $("#button-div").removeClass();
     $("header").removeClass();
+    $(".dropdown-item").addClass("brown-hover")
     $("nav").addClass("navbar navbar-expand-lg navbar-light bg-brown");
     $("body").addClass("body-brown");
     $("h1").addClass("brown-text");
@@ -53,6 +56,7 @@ if (cookieTemplate === "orange") {
     $("h5").removeClass();
     $("#button-div").removeClass();
     $("header").removeClass();
+    $(".dropdown-item").addClass("orange-hover")
     $("nav").addClass("navbar navbar-expand-lg navbar-light bg-orange");
     $("body").addClass("body-orange");
     $("h1").addClass("orange-text");
@@ -76,6 +80,7 @@ if (cookieTemplate === "neon") {
     $("h5").removeClass();
     $("#button-div").removeClass();
     $("header").removeClass();
+    $(".dropdown-item").addClass("neon-hover")
     $("nav").addClass("navbar navbar-expand-lg navbar-light bg-neon");
     $("body").addClass("body-neon");
     $("h1").addClass("neon-text");

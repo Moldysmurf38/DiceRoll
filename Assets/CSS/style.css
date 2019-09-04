@@ -94,7 +94,7 @@ td:empty:after{
     background-image: none;
 }
 
-.a-blue:hover {
+.blue-hover:hover {
     color: white;
     background-color: rgb(30,144,255);
     background-image: none;
@@ -130,7 +130,7 @@ td:empty:after{
     background-image: none;
 }
 
-.a-green:hover {
+.green-hover:hover {
     color: white;
     background-color: rgb(0,250,154);
     background-image: none;
@@ -166,7 +166,7 @@ td:empty:after{
     background-image: none;
 }
 
-.a-brown:hover {
+.brown-hover:hover {
     color: white;
     background-color: rgb(139, 69, 19);
     background-image: none;
@@ -202,7 +202,7 @@ td:empty:after{
     background-image: none;
 }
 
-.a-orange:hover {
+.orange-hover:hover {
     color: white;
     background-color: rgb(139, 69, 19);
     background-image: none;
@@ -237,7 +237,7 @@ td:empty:after{
     background-image: linear-gradient(to right, rgb(0,255,255), rgb(128,0,128));
 }
 
-.a-neon:hover {
+.neon-hover:hover {
     color: white;
     background-color: transparent;
     background-image: linear-gradient(to left, rgb(0,255,255), rgb(128,0,128));
