@@ -8,18 +8,12 @@ if (defaultCookie === undefined) {
 var cookieTemplate = Cookies.get("colorTemplate");
 
 if (cookieTemplate === "blue") {
-    $("nav").removeClass();
-    $("body").removeClass();
-    $("h1").removeClass();
-    $("h5").removeClass();
-    $("#button-div").removeClass();
-    $("header").removeClass();
     $(".dropdown-item").addClass("blue-hover")
-    $("nav").addClass("navbar navbar-expand-lg navbar-light bg-blue");
+    $("nav").addClass("bg-blue");
     $("body").addClass("body-blue");
     $("h1").addClass("blue-text");
     $("h5").addClass("blue-text");
-    $("#button-div").addClass("btn roll-button blue-button");
+    $("#button-div").addClass("blue-button");
 };
 if (cookieTemplate === "green") {
     $("nav").removeClass();
