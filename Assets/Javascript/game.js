@@ -9,7 +9,7 @@ var cookieTemplate = Cookies.get("colorTemplate");
 
 if (cookieTemplate === "blue") {
     $(".dropdown-item").addClass("blue-hover");
-    $("select").addClass("blue-select");
+    $(".select-option").addClass("blue-select");
     $("nav").addClass("bg-blue");
     $("body").addClass("body-blue");
     $("h1").addClass("blue-text");
@@ -18,7 +18,7 @@ if (cookieTemplate === "blue") {
 };
 if (cookieTemplate === "green") {
     $(".dropdown-item").addClass("green-hover");
-    $("select").addClass("green-select");
+    $(".select-option").addClass("green-select");
     $("nav").addClass("bg-green");
     $("body").addClass("body-green");
     $("h1").addClass("green-text");
@@ -27,7 +27,7 @@ if (cookieTemplate === "green") {
 };
 if (cookieTemplate === "brown") {
     $(".dropdown-item").addClass("brown-hover");
-    $("select").addClass("brown-select");
+    $(".select-option").addClass("brown-select");
     $("nav").addClass("bg-brown");
     $("body").addClass("body-brown");
     $("h1").addClass("brown-text");
@@ -36,7 +36,7 @@ if (cookieTemplate === "brown") {
 };
 if (cookieTemplate === "orange") {
     $(".dropdown-item").addClass("orange-hover");
-    $("select").addClass("orange-select");
+    $(".select-option").addClass("orange-select");
     $("nav").addClass("bg-orange");
     $("body").addClass("body-orange");
     $("h1").addClass("orange-text");
@@ -49,7 +49,7 @@ if (cookieTemplate === "basic") {
 };
 if (cookieTemplate === "neon") {
     $(".dropdown-item").addClass("neon-hover");
-    $("select").addClass("neon-select");
+    $(".select-option").addClass("neon-select");
     $("nav").addClass("bg-neon");
     $("body").addClass("body-neon");
     $("h1").addClass("neon-text");
