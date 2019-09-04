@@ -26,6 +26,8 @@ Note: Due to usage of a cookie, this app will not work in browsers that do not s
 
 Mobile Friendly <br/>
 Futher UI Customizations <br/>
+Add graphics for the dice <br/>
+Add mobile motion detection to trigger a roll
 
 ### **Built With:**
 
