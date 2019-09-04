@@ -16,74 +16,43 @@ if (cookieTemplate === "blue") {
     $("#button-div").addClass("blue-button");
 };
 if (cookieTemplate === "green") {
-    $("nav").removeClass();
-    $("body").removeClass();
-    $("h1").removeClass();
-    $("h5").removeClass();
-    $("#button-div").removeClass();
-    $("header").removeClass();
     $(".dropdown-item").addClass("green-hover")
-    $("nav").addClass("navbar navbar-expand-lg navbar-light bg-green");
+    $("nav").addClass("bg-green");
     $("body").addClass("body-green");
     $("h1").addClass("green-text");
     $("h5").addClass("green-text");
-    $("#button-div").addClass("btn roll-button green-button");
+    $("#button-div").addClass("green-button");
 };
 if (cookieTemplate === "brown") {
-    $("nav").removeClass();
-    $("body").removeClass();
-    $("h1").removeClass();
-    $("h5").removeClass();
-    $("#button-div").removeClass();
-    $("header").removeClass();
     $(".dropdown-item").addClass("brown-hover")
-    $("nav").addClass("navbar navbar-expand-lg navbar-light bg-brown");
+    $("nav").addClass("bg-brown");
     $("body").addClass("body-brown");
     $("h1").addClass("brown-text");
     $("h5").addClass("brown-text");
-    $("#button-div").addClass("btn roll-button brown-button");
+    $("#button-div").addClass("brown-button");
 };
 if (cookieTemplate === "orange") {
-    $("nav").removeClass();
-    $("body").removeClass();
-    $("h1").removeClass();
-    $("h5").removeClass();
-    $("#button-div").removeClass();
-    $("header").removeClass();
     $(".dropdown-item").addClass("orange-hover")
-    $("nav").addClass("navbar navbar-expand-lg navbar-light bg-orange");
+    $("nav").addClass("bg-orange");
     $("body").addClass("body-orange");
     $("h1").addClass("orange-text");
     $("h5").addClass("orange-text");
-    $("#button-div").addClass("btn roll-button orange-button");
+    $("#button-div").addClass("orange-button");
 };
 if (cookieTemplate === "basic") {
-    $("nav").removeClass();
-    $("body").removeClass();
-    $("h1").removeClass();
-    $("h5").removeClass();
-    $("#button-div").removeClass();
-    $("header").removeClass();
-    $("nav").addClass("navbar navbar-expand-lg navbar-light bg-custom");
+    $("nav").addClass("bg-custom");
     $("#button-div").addClass("btn roll-button");
 };
 if (cookieTemplate === "neon") {
-    $("nav").removeClass();
-    $("body").removeClass();
-    $("h1").removeClass();
-    $("h5").removeClass();
-    $("#button-div").removeClass();
-    $("header").removeClass();
     $(".dropdown-item").addClass("neon-hover")
-    $("nav").addClass("navbar navbar-expand-lg navbar-light bg-neon");
+    $("nav").addClass("bg-neon");
     $("body").addClass("body-neon");
     $("h1").addClass("neon-text");
     $("h5").addClass("neon-text");
-    $("#button-div").addClass("btn roll-button neon-button");
+    $("#button-div").addClass("neon-button");
     $("header").addClass("neon-header")
     $("#button-div").css({"border": "1px solid rgb(255,255,255)"})
 };
-
 
 var rollTotal = 0;
 var twoTotal = 0;
@@ -212,42 +181,33 @@ $(".roll-button").on("click", function () {
     var totalSum = twoTotal + fourTotal + sixTotal + eightTotal + tenTotal + twelveTotal + twentyTotal + hundredTotal
     $("#total-results").html(totalSum);
 });
-
-
 function diceRoll(min, max) {
     var diceThrow = Math.floor(Math.random() * max) + min;
     return diceThrow;
 };
-
 function rollDisplay(diceToss, i, y) {
     $("#" + y + "-" + i + "-roll").html(diceToss);
 };
-
 $("#blue-template").on("click", function() {
     Cookies.set("colorTemplate", "blue", {expires: 2});
     location.reload();
 });
-
 $("#green-template").on("click", function() {
     Cookies.set("colorTemplate", "green", {expires: 2});
     location.reload();
 });
-
 $("#brown-template").on("click", function() {
     Cookies.set("colorTemplate", "brown", {expires: 2});
     location.reload();
 });
-
 $("#orange-template").on("click", function() {
     Cookies.set("colorTemplate", "orange", {expires: 2});
     location.reload();
 });
-
 $("#red-template").on("click", function() {
     Cookies.set("colorTemplate", "basic", {expires: 2});
     location.reload();
 });
-
 $("#neon-template").on("click", function() {
     Cookies.set("colorTemplate", "neon", {expires: 2});
     location.reload();

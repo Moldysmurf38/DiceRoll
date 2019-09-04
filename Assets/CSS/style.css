@@ -219,7 +219,7 @@ td:empty:after{
 
 .orange-button:hover {
     color: rgb(255,255,255);
-    background: rgb(204,85,0);
+    background: rgb(255, 106, 0);
     border: 2px solid rgb(255,255,255);
 }
 
