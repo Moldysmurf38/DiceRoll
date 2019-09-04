@@ -1,7 +1,7 @@
 var defaultCookie = Cookies.get("colorTemplate");
 
 if (defaultCookie === undefined) {
-    Cookies.set("colorTemplate", "basic", {expires: 2});
+    Cookies.set("colorTemplate", "basic", {expires: 365});
     location.reload();
 };
 
@@ -9,7 +9,7 @@ var cookieTemplate = Cookies.get("colorTemplate");
 
 if (cookieTemplate === "blue") {
     $(".dropdown-item").addClass("blue-hover");
-    $(".select-option").addClass("blue-select");
+    $("select").addClass("blue-select");
     $("nav").addClass("bg-blue");
     $("body").addClass("body-blue");
     $("h1").addClass("blue-text");
@@ -18,7 +18,7 @@ if (cookieTemplate === "blue") {
 };
 if (cookieTemplate === "green") {
     $(".dropdown-item").addClass("green-hover");
-    $(".select-option").addClass("green-select");
+    $("select").addClass("green-select");
     $("nav").addClass("bg-green");
     $("body").addClass("body-green");
     $("h1").addClass("green-text");
@@ -27,7 +27,7 @@ if (cookieTemplate === "green") {
 };
 if (cookieTemplate === "brown") {
     $(".dropdown-item").addClass("brown-hover");
-    $(".select-option").addClass("brown-select");
+    $("select").addClass("brown-select");
     $("nav").addClass("bg-brown");
     $("body").addClass("body-brown");
     $("h1").addClass("brown-text");
@@ -36,7 +36,7 @@ if (cookieTemplate === "brown") {
 };
 if (cookieTemplate === "orange") {
     $(".dropdown-item").addClass("orange-hover");
-    $(".select-option").addClass("orange-select");
+    $("select").addClass("orange-select");
     $("nav").addClass("bg-orange");
     $("body").addClass("body-orange");
     $("h1").addClass("orange-text");
@@ -49,7 +49,7 @@ if (cookieTemplate === "basic") {
 };
 if (cookieTemplate === "neon") {
     $(".dropdown-item").addClass("neon-hover");
-    $(".select-option").addClass("neon-select");
+    $("select").addClass("neon-select");
     $("nav").addClass("bg-neon");
     $("body").addClass("body-neon");
     $("h1").addClass("neon-text");
@@ -194,26 +194,26 @@ function rollDisplay(diceToss, i, y) {
     $("#" + y + "-" + i + "-roll").html(diceToss);
 };
 $("#blue-template").on("click", function() {
-    Cookies.set("colorTemplate", "blue", {expires: 2});
+    Cookies.set("colorTemplate", "blue", {expires: 365});
     location.reload();
 });
 $("#green-template").on("click", function() {
-    Cookies.set("colorTemplate", "green", {expires: 2});
+    Cookies.set("colorTemplate", "green", {expires: 365});
     location.reload();
 });
 $("#brown-template").on("click", function() {
-    Cookies.set("colorTemplate", "brown", {expires: 2});
+    Cookies.set("colorTemplate", "brown", {expires: 365});
     location.reload();
 });
 $("#orange-template").on("click", function() {
-    Cookies.set("colorTemplate", "orange", {expires: 2});
+    Cookies.set("colorTemplate", "orange", {expires: 365});
     location.reload();
 });
 $("#red-template").on("click", function() {
-    Cookies.set("colorTemplate", "basic", {expires: 2});
+    Cookies.set("colorTemplate", "basic", {expires: 365});
     location.reload();
 });
 $("#neon-template").on("click", function() {
-    Cookies.set("colorTemplate", "neon", {expires: 2});
+    Cookies.set("colorTemplate", "neon", {expires: 365});
     location.reload();
 });

@@ -14,7 +14,7 @@ body {
     background-image: none;
 }
 
-.select-option:hover {
+select:hover {
     color: white;
     background-color: red;
     background-image: none;
