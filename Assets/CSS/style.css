@@ -8,11 +8,11 @@ body {
     margin-right: 10%;
 }
 
-.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+/* a:hover {
     color: white;
     background-color: red;
     background-image: none;
-}
+} */
 
 
 h1 {
