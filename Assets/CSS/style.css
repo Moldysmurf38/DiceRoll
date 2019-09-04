@@ -14,6 +14,11 @@ body {
     background-image: none;
 }
 
+.select-option:hover {
+    color: white;
+    background-color: red;
+    background-image: none;
+}
 
 h1 {
     text-align: center;
@@ -100,6 +105,12 @@ td:empty:after{
     background-image: none;
 }
 
+.blue-select:hover {
+    color: white;
+    background-color: rgb(30,144,255);
+    background-image: none;
+}
+
 .blue-text {
     color: rgb(30,144,255);
 }
@@ -136,6 +147,11 @@ td:empty:after{
     background-image: none;
 }
 
+.green-select:hover {
+    color: white;
+    background-color: rgb(0,250,154);
+    background-image: none;
+}
 .green-text {
     color: rgb(0,250,154);
 }
@@ -167,6 +183,12 @@ td:empty:after{
 }
 
 .brown-hover:hover {
+    color: white;
+    background-color: rgb(139, 69, 19);
+    background-image: none;
+}
+
+.brown-select:hover {
     color: white;
     background-color: rgb(139, 69, 19);
     background-image: none;
@@ -204,7 +226,13 @@ td:empty:after{
 
 .orange-hover:hover {
     color: white;
-    background-color: rgb(139, 69, 19);
+    background-color: rgb(204,85,0);
+    background-image: none;
+}
+
+.orange-select:hover {
+    color: white;
+    background-color: rgb(204,85,0);
     background-image: none;
 }
 
@@ -238,6 +266,12 @@ td:empty:after{
 }
 
 .neon-hover:hover {
+    color: white;
+    background-color: transparent;
+    background-image: linear-gradient(to left, rgb(0,255,255), rgb(128,0,128));
+}
+
+.neon-select:hover {
     color: white;
     background-color: transparent;
     background-image: linear-gradient(to left, rgb(0,255,255), rgb(128,0,128));

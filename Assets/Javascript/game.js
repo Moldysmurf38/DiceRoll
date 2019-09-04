@@ -8,7 +8,8 @@ if (defaultCookie === undefined) {
 var cookieTemplate = Cookies.get("colorTemplate");
 
 if (cookieTemplate === "blue") {
-    $(".dropdown-item").addClass("blue-hover")
+    $(".dropdown-item").addClass("blue-hover");
+    $(".select-option").addClass("blue-select");
     $("nav").addClass("bg-blue");
     $("body").addClass("body-blue");
     $("h1").addClass("blue-text");
@@ -16,7 +17,8 @@ if (cookieTemplate === "blue") {
     $("#button-div").addClass("blue-button");
 };
 if (cookieTemplate === "green") {
-    $(".dropdown-item").addClass("green-hover")
+    $(".dropdown-item").addClass("green-hover");
+    $(".select-option").addClass("green-select");
     $("nav").addClass("bg-green");
     $("body").addClass("body-green");
     $("h1").addClass("green-text");
@@ -24,7 +26,8 @@ if (cookieTemplate === "green") {
     $("#button-div").addClass("green-button");
 };
 if (cookieTemplate === "brown") {
-    $(".dropdown-item").addClass("brown-hover")
+    $(".dropdown-item").addClass("brown-hover");
+    $(".select-option").addClass("brown-select");
     $("nav").addClass("bg-brown");
     $("body").addClass("body-brown");
     $("h1").addClass("brown-text");
@@ -32,7 +35,8 @@ if (cookieTemplate === "brown") {
     $("#button-div").addClass("brown-button");
 };
 if (cookieTemplate === "orange") {
-    $(".dropdown-item").addClass("orange-hover")
+    $(".dropdown-item").addClass("orange-hover");
+    $(".select-option").addClass("orange-select");
     $("nav").addClass("bg-orange");
     $("body").addClass("body-orange");
     $("h1").addClass("orange-text");
@@ -44,14 +48,15 @@ if (cookieTemplate === "basic") {
     $("#button-div").addClass("btn roll-button");
 };
 if (cookieTemplate === "neon") {
-    $(".dropdown-item").addClass("neon-hover")
+    $(".dropdown-item").addClass("neon-hover");
+    $(".select-option").addClass("neon-select");
     $("nav").addClass("bg-neon");
     $("body").addClass("body-neon");
     $("h1").addClass("neon-text");
     $("h5").addClass("neon-text");
     $("#button-div").addClass("neon-button");
-    $("header").addClass("neon-header")
-    $("#button-div").css({"border": "1px solid rgb(255,255,255)"})
+    $("header").addClass("neon-header");
+    $("#button-div").css({"border": "1px solid rgb(255,255,255)"});
 };
 
 var rollTotal = 0;
